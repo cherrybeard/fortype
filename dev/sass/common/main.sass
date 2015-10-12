@@ -2,12 +2,20 @@
 	cursor: inherit
 
 html
+	$padding-bottom: 50px 
+	
 	background-color: $color-beige
 	cursor: default
 	font:
 		family: $font-primary
-		size: 14px
-	padding: 30px 10px
+		size: 15px
+	padding: 30px 10px $padding-bottom
+
+	.footer
+		position: absolute
+		left: 0
+		right: 0
+		bottom: $padding-bottom
 
 a
 	cursor: pointer
@@ -17,3 +25,7 @@ a
 	
 	.logo
 		display: inline-block
+	
+.footer
+	font: italic 15px $font-secondary
+	text-align: center
