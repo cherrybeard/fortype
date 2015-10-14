@@ -1,0 +1,40 @@
+.header
+	line-height: 20px
+	padding-top: 25px
+	position: relative
+
+	span
+		$color: $color-active
+	
+		color: $color
+	
+		&::before
+			background-color: $color
+	
+	a
+		&:hover
+			&::before
+				background-color: $color-active
+	
+		&::before
+			background-color: $color-neutral
+	
+	.logo
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%) 
+	
+	.link-add-word
+		&::before
+			$size: 11px
+
+			content: ''
+			display: inline-block
+			background:
+				image: url('#{$path-image}header/link-add-word.svg')
+				position: center
+				repeat: no-repeat
+			height: $size
+			width: $size
+			margin-right: 4px

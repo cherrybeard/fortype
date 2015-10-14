@@ -1,4 +1,9 @@
 header.header
+	if page == 'word-edit'
+		span.link-add-word Добавить
+	else
+		a.link-add-word(href="word-edit.html") Добавить
+
 	if page == 'index'
 		span.logo Fortype
 	else
