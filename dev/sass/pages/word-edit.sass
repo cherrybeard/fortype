@@ -1,0 +1,27 @@
+.page-word-edit
+	counter-reset: step
+	
+	header
+		text-align: center
+		line-height: 1.25
+		position: relative
+	
+		&:not(:first-child)
+			margin-top: 180px
+	
+		&::before
+			counter-increment: step
+			content: counter(step)
+			color: $color-minor
+			font: bold 108px $font-tertiary
+			position: absolute
+			top: -75px
+			left: 50%
+			transform: translateX(-50%)
+			z-index: -1
+	
+	h2
+		font-size: 28px
+	
+	.subtitle
+		margin-top: 6px
