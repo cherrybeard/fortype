@@ -1,5 +1,24 @@
 .page-word-edit
 	counter-reset: step
+
+	form
+		align-items: center
+		display: flex
+		flex-direction: column
+
+	.form-actions
+		margin-top: 95px
+		text-align: center
+		width: 460px
+	
+		.pseudo-link
+			display: block
+			margin-top: 55px
+
+		.button-group
+			.form-error
+				color: $color-neutral-minor
+				margin-top: 10px
 	
 	header
 		text-align: center
@@ -12,7 +31,7 @@
 		&::before
 			counter-increment: step
 			content: counter(step)
-			color: $color-minor
+			color: $color-active-minor
 			font: bold 108px $font-tertiary
 			position: absolute
 			top: -75px

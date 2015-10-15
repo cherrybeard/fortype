@@ -6,9 +6,17 @@ block variables
 	
 block content
 	.page-word-edit
-		header
-			h2 Загрузите изображение
-			.subtitle .jpg или .png
-		header
-			h2 Определите буквы
-			.subtitle Обведите каждую букву, начиная с первой
+		form
+			header
+				h2 Загрузите изображение
+				.subtitle .jpg или .png
+				
+			header
+				h2 Определите буквы
+				.subtitle Обведите каждую букву, начиная с первой
+				
+			.form-actions
+				.button-group.invalid
+					button.button(type="submit" disabled) Сохранить
+					.form-error Вы определили не все буквы
+				a.pseudo-link(href="index.html") Отмена
