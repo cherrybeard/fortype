@@ -15,14 +15,15 @@ html
 		link(href="css/app.css" rel="stylesheet")/
 	
 	body
-		block header
-			include app/header
-	
-		block content
-		
-		
-		block footer
-			include app/footer
+		.fortype
+			block header
+				include app/header
+
+			div(class="page-#{page}")
+				block content
+
+			block footer
+				include app/footer
 		
 		block scripts
 			script(src="js/app.js")

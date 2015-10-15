@@ -3,24 +3,35 @@
 *
 	cursor: inherit
 
+html, body
+	height: 100%
+
 html
-	$padding-bottom: 50px 
-	
 	background-color: $color-beige
 	cursor: default
 	font:
 		family: $font-primary
 		size: 15px
-	padding: 30px 25px $padding-bottom
+
+.fortype
+	$footer-height: 20px
+	$padding-bottom: 170px
+	$footer-pos-bottom: 20px
+
+	box-sizing: border-box
+	min-height: 100%
+	padding: 30px 25px ($padding-bottom + $footer-height + $footer-pos-bottom)
+	position: relative
 
 	.header
 		margin-bottom: 100px
 
 	.footer
+		line-height: $footer-height
 		position: absolute
 		left: 0
 		right: 0
-		bottom: $padding-bottom
+		bottom: $footer-pos-bottom
 
 a
 	cursor: pointer
