@@ -1,8 +1,10 @@
+include ../ui/text-field
+
 block variables
 
 doctype html
 
-html
+html(ng-app="fortype")
 	head
 		link(rel="icon" href="img/favicon.ico")/
 		link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-icon.png")/
@@ -26,4 +28,6 @@ html
 				include app/footer
 		
 		block scripts
+			script(src="//code.jquery.com/jquery-2.1.4.min.js")
+			script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")
 			script(src="js/app.js")

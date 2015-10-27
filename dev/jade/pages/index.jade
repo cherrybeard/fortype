@@ -5,9 +5,12 @@ block variables
 	- title = 'Fortype'
 	
 block content
+	form
+		+text-field(type="search" id="search" label="Поиск по букве или слову")
+
 	.word-list
 		- var i = 1
 	
 		while i < 48
-			a(href="javascript:void(0);").word
+			a.word(href="javascript:void(0);")
 				img(src="img/demo/words/#{i++}.jpg")
