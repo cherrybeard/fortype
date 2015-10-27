@@ -1,0 +1,32 @@
+%search-icon
+	$size: 24px
+	$thickness: 3px
+		
+	background: transparent
+	cursor: pointer
+	position: relative
+	height: $size
+	width: $size
+	
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+
+	&::before
+		$circle-size: 14px
+
+		border: solid $thickness
+			radius: 50%
+		height: $circle-size
+		width: $circle-size
+		top: 0
+		left: 0
+
+	&::after
+		height: $thickness
+		width: 10px
+		bottom: 0
+		right: 0
+		transform: rotate(45deg)
+			origin: right center

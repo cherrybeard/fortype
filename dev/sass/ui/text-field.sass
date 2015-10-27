@@ -1,0 +1,44 @@
+@import text-field/search-icon
+
+.text-field
+	border: solid 1px $color-neutral-minor
+	display: flex
+	padding: 16px 22px 14px
+
+	&.focus
+		border-color: $color-active
+
+	input
+		background: transparent
+		cursor: text
+		line-height: 20px
+		width: 100%
+	
+		+placeholder
+			color: inherit
+	
+	.addon
+		&:last-child
+			margin-left: 11px
+	
+.search-text-field
+	.addon
+		@extend %search-icon
+	
+		$color: $color-neutral-minor
+	
+		&:focus,
+		&:hover
+			$hover-color: $color-active
+			
+			&::before
+				border-color: $hover-color
+	
+			&::after
+				background: $hover-color
+	
+		&::before
+			border-color: $color
+	
+		&::after
+			background: $color

@@ -1,0 +1,9 @@
+mixin text-field
+	- var a = attributes
+
+	.text-field(class="#{ a.type ? a.type+'-text-field' : ''}")
+		label.hidden(for=a.id)= a.label
+		input(type="text" id=a.id placeholder=a.label)
+		
+		if a.type == 'search'
+			button.addon(title="Искать")
