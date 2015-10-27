@@ -5,4 +5,9 @@ block variables
 	- title = 'Fortype'
 	
 block content
-	// start here
+	.word-list
+		- var i = 1
+	
+		while i < 48
+			.word
+				img(src="img/demo/words/#{i++}.jpg")
